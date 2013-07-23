@@ -1,0 +1,100 @@
+/* 
+Bootstrap is stupid and uses pixels for spans; this custom style overrides relevant (to this design only) span widths to percents.  
+
+Like a boss.  
+*/
+
+@import "twitter/bootstrap/bootstrap";
+@import "twitter/bootstrap/responsive";
+
+/* fonts */
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+
+a:link {
+	color: #C97026;
+}
+
+.span9 {
+	max-width: 83%;
+	min-width: 17%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-top: 7px;
+}
+
+.container {
+	width: auto;
+	margin-left: 1%;
+	margin-right: 1%;
+	text-wrap: normal;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.navbar {
+
+  .nav {
+	  img {
+	        float: left;
+	        margin-top: 4px;
+	        padding-top: 2px;
+	 }
+  	li {
+  	  font-size: 111%;
+      padding: -2px;
+  	  border: none;
+  	  a:link {  
+  	  color: #578022;
+	  }
+	  a:active {
+	  color: #578022;
+	  }
+	  a:hover {
+	  color: #73b125;
+	  background-color: #d9f3b7; 
+	  -webkit-transition: all 0.9s ease; 
+	  -moz-transition: all 0.9s ease; 
+	  -o-transition: all 0.9s ease; 
+	  }
+	  a:visited {
+	  color: #578022;
+	  }
+	  a:focus { color: #81495A; }
+	  	.dropdown-menu {
+		  font-size: 83%;
+		  border-top: none;
+		  a:hover {
+		  color: #578022;
+		  background: #fcfcfc;
+		  text-decoration-color: none;
+		  }
+  	  }
+	  .nav-tabs {
+	  -webkit-border-radius: .2em;
+   	  -moz-border-radius: .2em;
+       border-radius: .2em;
+       border: none;
+    	  a:hover {
+	      color: #224D66;
+	      background-color: #edeef7; 
+	      -webkit-transition: all 0.9s ease; 
+	      -moz-transition: all 0.9s ease; 
+	      -o-transition: all 0.9s ease; 
+	   }
+	 }
+  	}
+  }
+}
+
+.table {
+	font-size: 111%;
+}
+
+.password_field {
+    border-color: rgba(133, 137, 80, 0.8);
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(133, 137, 60, 0.99);
+    outline: 0 none;
+}

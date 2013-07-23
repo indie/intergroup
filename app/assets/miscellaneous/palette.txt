@@ -1,0 +1,6 @@
+HEX
+#76B32A bright green
+#DAF3B9 light green
+#EDB340 bright orange links
+#F8EFD0 tab background
+#844B5F dark purple hotline

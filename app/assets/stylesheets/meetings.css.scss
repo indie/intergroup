@@ -1,0 +1,104 @@
+//* Hackeress Creative Studio kicks some sass *//
+
+.inst {
+  font-family: monospace;
+  font-size: 13px;
+  color: #959595;
+  margin-left: 3px;
+  }
+
+    @media only screen and (max-width: 800px) {
+    /* What parts of this columnar data do we want to go south? */
+    #storylinks-container{
+       width: auto;
+       margin-left: 1%;
+       margin-right: 1%;
+       #storylinks {
+       margin-left:3px;
+       margin-right: 3px;
+       }
+
+
+    #go-south table,
+    {
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif; 
+    }
+    #go-south thead,
+    #go-south tbody,
+    #go-south th,
+    #go-south td,
+    #go-south tr {
+    display: block;
+    }
+     
+    #go-south th {
+    text-align: right;
+    float: right;
+    }
+     
+    #go-south tr { border: 1px solid #fcfcfc; }
+     
+    #go-south td {
+    border: none;
+    position: relative;
+    padding-left: 11%;
+    white-space: normal !important;
+    text-align:left;
+    wrap: normal;
+    }
+     
+    #go-south td:before {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    width: 10%;
+    max-width: 13%;
+    min-width: 5%;
+    padding-top: 10px;
+    padding-right: 3px;
+    margin-right: 3px;
+    white-space: nowrap;
+    font-size: 99%;
+    visibility: hidden;
+    }
+     
+    #go-south td:before { content: attr(data-title); }
+    }
+
+   #go-south td:after {
+    position: absolute;
+    left: 13px;
+    width: 63%;;
+    max-width: 75%;
+    min-width: 33%;
+    margin-left: 23%;
+    padding-top: -1px;
+    padding-left: 25px;
+    white-space: nowrap;
+    font-size: 79%;
+    color: #e0e0e0;
+    }
+
+
+
+.table-striped tbody tr:nth-child(odd) td {
+   background-color: #ece7ff;
+}
+
+.table-striped tbody tr:nth-child(even) td {
+   background-color: #fcfcfc;
+}
+     }
+
+.numeric {
+  font-weight: bold;
+  font-size: 93%;
+  background-color: #d9f3b7; 
+  text-transform: uppercase;
+  a:link { color: #534848; }
+  a:active { color: #534848; }
+  a:hover { color: #534848; font-weight: bold; }
+  a:visited { color: #534848; }
+
+}

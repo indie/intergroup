@@ -1,0 +1,108 @@
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+
+        <div class="nav-collapse">
+          <ul class="nav">
+            <%= link_to image_tag("square.png", alt: "ico", height: "32", width: "32") %>&nbsp;&nbsp;&nbsp;
+            
+            <% if signed_in? %>
+            <li><%= link_to "Edit Meetings", meetings_path %></li>
+            <li><%= link_to "Add New Meeting", new_path %></li>
+            <li><%= link_to "Home", home_path %></li>
+            <li id="fat-menu" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Central Office <b class="caret"></b>
+              </a>
+                <ul class="dropdown-menu">
+                <li><%= link_to "Map & Hours", '#' %></li>  
+                <li><%= link_to "Meeting Update Form", '#' %></li>
+                <li><%= link_to "Literature", '#' %></li>  
+                <li><%= link_to "Donate", '#' %></li>
+                <li><%= link_to "Events", '#' %></li>
+                <li><%= link_to "Service", '#' %></li>
+                </ul>
+      
+            <li id="fat-menu" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Newsletters <b class="caret"></b>
+              </a>
+                <ul class="dropdown-menu">
+                <li><%= link_to "Current Year, 2013", '#' %>
+                <li><%= link_to "Archives", '#' %></li>
+              </ul>
+
+            <li id="fat-menu" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Account <b class="caret"></b>
+              </a>
+                <ul class="dropdown-menu">
+                <li><%= link_to "Profile", current_user %></li>
+                <li><%= link_to "Settings", edit_user_path(current_user) %></li>
+                <li class="divider"></li>
+                <li><%= link_to "Sign out", signout_path, method: "delete" %></li>
+                <li><%= link_to "Sign In", signin_path %></li>
+
+              </ul>
+            </li>
+            <% else %>
+
+            <li><%= link_to "Home", home_path %></li>
+            <li><%= link_to "Meetings", 'clear ' %></li>
+            <li id="fat-menu" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Central Office <b class="caret"></b>
+              </a>
+                <ul class="dropdown-menu">
+                <li><%= link_to "Map & Hours", '#' %></li>  
+                <li><%= link_to "Meeting Update Form", '#' %></li>
+                <li><%= link_to "Donate", '#' %></li>
+                <ul class="divider"></ul>
+                <li><%= link_to "Create Admin", signup_path %></li> <!-- be sure to remove this on production -->
+                <li><%= link_to "Admin  Login", signin_path %></li> 
+              </ul>
+      
+            <li id="fat-menu" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Newsletters <b class="caret"></b>
+              </a>
+                <ul class="dropdown-menu">
+                <li><%= link_to "Current Year, 2013", '#' %>
+                <li><%= link_to "Archives", '#' %></li>
+              </ul>
+            <li><%= link_to "Grapevine", 'http://www.aagrapevine.org' %></li>  
+            <li><%= link_to "Events", '#' %></li>
+            <li><%= link_to "Service", '#' %></li>
+
+           <li id="fat-menu" class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About AA <b class="caret"></b>
+            </a>
+              <ul class="dropdown-menu">  
+                <li><%= link_to "More About AA", '#' %></li>
+                <li><%= link_to "FAQ for the Newcomer", '#' %></li>
+                <li><%= link_to "Anonymity Letter", '#' %></li>
+                <li><%= link_to "Alcoholic in Your Life?", '#' %></li>
+                <li><%= link_to "AA World Services", 'http://www.aa.org', target: 'blank' %></li>  
+              </ul>
+
+              <li id="fat-menu" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                Another Menu <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li><%= link_to "Something", '#' %></li>
+                <li><%= link_to "Something Else", '#' %></li>
+              </ul>
+
+          <% end %>
+
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>

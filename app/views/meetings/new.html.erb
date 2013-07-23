@@ -1,0 +1,25 @@
+<%- model_class = Meeting -%>
+
+<% if current_user %>
+
+<div class="page-header">
+Add a new meeting
+</div>
+
+
+<%= render :partial => 'form' %>
+
+<h3>Import a CSV of Meetings</h3>
+
+<%= form_tag import_meetings_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <br />
+  <%= submit_tag "Import" %>
+
+<% end %>
+<% else %>
+
+<p> Not so fast!  You must be signed in and authorized to add or update meetings. </p>
+
+
+<% end %>
