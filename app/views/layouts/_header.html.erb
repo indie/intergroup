@@ -9,8 +9,6 @@
 
         <div class="nav-collapse">
           <ul class="nav">
-            <%= link_to image_tag("square.png", alt: "ico", height: "32", width: "32") %>&nbsp;&nbsp;&nbsp;
-            
             <% if signed_in? %>
             <li><%= link_to "Edit Meetings", meetings_path %></li>
             <li><%= link_to "Add New Meeting", new_path %></li>
@@ -63,8 +61,8 @@
                 <li><%= link_to "Meeting Update Form", '#' %></li>
                 <li><%= link_to "Donate", '#' %></li>
                 <ul class="divider"></ul>
-                <li><%= link_to "Create Admin", signup_path %></li> <!-- be sure to remove this on production -->
-                <li><%= link_to "Admin  Login", signin_path %></li> 
+                <li><%= link_to "Create Admin User", signup_path %></li> <!-- be sure to remove this on production -->
+                <li><%= link_to "Admin Login", signin_path %></li> 
               </ul>
       
             <li id="fat-menu" class="dropdown">
