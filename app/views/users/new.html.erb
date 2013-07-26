@@ -2,28 +2,30 @@
 
 <h1>Sign up</h1>
 
-<div class="inst"> Authorization is required</div>
+<div class="inst"> Authorization is required.  Please see the source code for more details.</div>
+
+<!-- If you'd like to use the web interface for administrative user creation, please uncomment the ruby code by removing the hash tags below, deploy the site, and be sure to lock or hide the page when done --> 
 
 <div class="row">
     <div class="span6 offset3">
-    <%= form_for(@user) do |f| %>
-    <%= render 'shared/error_messages' %>
+    <%#= form_for(@user) do |f| %>
+    <%#= render 'shared/error_messages' %>
 
-      <%= f.label :name %>
-      <%= f.text_field :name %>
+      <%#= f.label :name %>
+      <%#= f.text_field :name %>
 
-      <%= f.label :email %>
-      <%= f.text_field :email %>
+      <%#= f.label :email %>
+      <%#= f.text_field :email %>
 
-      <%= f.label :password, class: "textarea" %>
-      <%= f.password_field :password %>
+      <%#= f.label :password, class: "textarea" %>
+      <%#= f.password_field :password %>
 
-      <%= f.label :password_confirmation, "Confirmation" %>
-      <%= f.password_field :password_confirmation %>
+      <%#= f.label :password_confirmation, "Confirmation" %>
+      <%#= f.password_field :password_confirmation %>
 
       <br />
 
-      <%= f.submit "Create my account", class: "btn btn-custom" %>
-    <% end %>
+      <%#= f.submit "Create my account", class: "btn btn-custom" %>
+    <%# end %>
   </div>
 </div>

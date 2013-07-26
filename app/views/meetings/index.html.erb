@@ -8,6 +8,11 @@
     <div class="hotline"><strong>(650) 577 - 1310</strong><div class="helpline">HELP LINE AVAILABLE 24/7</div></div>
 
 <br />
+
+<h1>San Mateo County Meetings (demo) </h1>
+
+<div class="inst"> Current as of July 16, 2013 </div>
+
 <div class="search-instructions">
 
    <strong>&nbsp;&nbsp;How to find meetings:</strong>
@@ -69,8 +74,10 @@
   </tbody>
 
 </table>
-
 </div>
+
+<div class="meeting-count"><%= Meeting.find(:all).length %> total meetings</div>
+
 <p>
   Download ALL:
   <%= link_to "CSV", meetings_path(format: "csv") %> |
