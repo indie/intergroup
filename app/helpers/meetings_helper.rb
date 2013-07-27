@@ -1,10 +1,4 @@
 module MeetingsHelper
- def with_params_for(code, value)
-  current_params = params["q"].except(code)
-  "/meetings?utf8=%E2%9C%93&q[#{code}]=#{value}&commit=Search&" +
-    current_params.map { |cp| "q[#{cp}]=#{params['q'][cp]}" }.join("&")
-  end
-
   # render_link renders the current link_val on the param_type key 
   # with any previously-used query
     # param_type string example ~ day_cont

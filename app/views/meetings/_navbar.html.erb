@@ -22,6 +22,8 @@ end debug -->
         <% end %>
     </ul><br />
 
+    <div class="inst">Note: the section below is demo only; not all meetings have all applicable labels </div>
+
     <ul class="navbar-codes nav nav-pills">
         <% @param_data["codes_cont"].each do | key, val | %>
         <li><%= link_to key, render_link("codes_cont", val, @extra_q), 
