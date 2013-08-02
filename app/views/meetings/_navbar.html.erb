@@ -22,14 +22,16 @@ end debug -->
         <% end %>
     </ul><br />
 
-    <div class="inst">Note: the section below is demo only; not all meetings have all applicable labels </div>
+    <div class="inst">Meeting codes - demo only; not all meetings have all applicable labels </div>
 
     <ul class="navbar-codes nav nav-pills">
         <% @param_data["codes_cont"].each do | key, val | %>
         <li><%= link_to key, render_link("codes_cont", val, @extra_q), 
         :style => render_css("codes_cont", val, @extra_q)  %></li>
         <% end %>
-    </ul><br />
+        <li><%= link_to 'recently updated', '/?q[s]=updated_at+desc' %></li>
+        <li><%= link_to 'chip meetings', '/meetings?utf8=%E2%9C%93&q[name_or_notes_or_codes_cont]=chip&commit=Search' %></li>
+    </ul>
 
     <div class="searchbox">
       <%= search_form_for @q do |f| %>
@@ -39,5 +41,6 @@ end debug -->
       <% end %>
     </div>
   </div>
+
 
 </div>

@@ -2,7 +2,7 @@
   <div class="control-group">
     <%= f.label :day, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :day, :class => 'text_field' %> <div class="inst"> Format:  Sunday, 08:00 PM</div>
+      <%= f.text_field :day, :class => 'text_field' %> <div class="inst"> Format:  Sunday, PM 08:00 -- The AM/PM MUST precede the time for chronological sort to work correctly</div>
     </div>
   </div>
   <div class="control-group">
@@ -49,7 +49,7 @@
   <div class="control-group">
     <%= f.label :map, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :map, :class => 'text_field' %> <div class="inst"> start with http:// </div>
+      <%= f.text_field :map, :class => 'text_field' %> <div class="inst"> Link to the map -- start with http:// </div>
     </div>
   </div>
   <div class="control-group">
