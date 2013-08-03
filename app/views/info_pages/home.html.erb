@@ -10,39 +10,47 @@
 <div id="twocols">
 
   <div class="span3">
-      <h3>What is this?</h3>
+   <h3>What is this?</h3>
     <div class="welcome">
-      This is a <strong>mobile-friendly</strong>, <%= link_to 'open-source', "http://en.wikipedia.org/wiki/Open-source_software" %> demo of a website and meetings database structure with search, sort, export and import for Intergroup fellowships of <%= link_to 'AA', 'http://www.aa.org' %> or <%= link_to 'NA', "http://www.na.org" %>!  The code is licensed under <%= link_to 'Apachev2', 'http://www.apache.org/licenses/LICENSE-2.0.html' %> and is available on <%= link_to 'github', 'https://github.com/indie/intergroup' %>, along with a general <%= link_to 'readme', "https://github.com/indie/intergroup/blob/master/readme.txt" %> tutorial for how to get going; intermediate to advanced developers.
+      <div class="centraloffice">
+        <div class="img-left"><%= link_to image_tag("mobii.png", alt: "logo", title: "latest"), '#' %>
+           </div></div>   
+This is a <strong>mobile-friendly</strong>, <%= link_to 'open-source', "http://en.wikipedia.org/wiki/Open-source_software" %> demo of a meetings database with search, sort, export and import for Intergroup fellowships of <%= link_to 'AA', 'http://www.aa.org' %> or <%= link_to 'NA', "http://www.na.org" %>!  
       <p></p>
-      Look at it both in a web browser AND on a smartphone!
-      
+      Look at it both in a web browser AND on a smartphone!</strong>       
+         <p></p>
+
+
     </div>
       </div>
     
   <div class="span4">
+    <div class="centraloffice">
+      <p></p>  
+      There are <strong>two ways</strong> to get this working with your local .org website:  <p></p>  
+        <strong>1) Free, open-source code -- UNHOSTED </strong><br />
+      
+        The code is licensed under <%= link_to 'Apachev2', 'http://www.apache.org/licenses/LICENSE-2.0.html' %> and is available on <%= link_to 'github', 'https://github.com/indie/intergroup' %>, along with a general <%= link_to 'readme', "https://github.com/indie/intergroup/blob/master/readme.txt" %> tutorial for how to get going; intermediate to advanced developers. <p></p>   
+      
+        <strong>2) Free, open-source code -- HOSTED </strong><br />
+      If all the code and technical stuff sounds beyond the reach of your group, do not fret;  we can still get this working!  Hosted apps available.  You will receive login info to update meeting info.  
+      <p></p>
+      For option #2 please submit a <%= link_to 'Good Faith', 'http://www.hackeress.com/goodfaith', :target => "_blank" %> payment to get started, and <%= link_to 'send in', 'mailto:lsc@hackeress.com' %> a spreadsheet, CSV or link to the current online meetings listing so we can be live within 72 hours.   
+          </div>
+          </div>
+
+
+      <div class="span4">
       <h3>Meetings Demo</h3>
       <div class="meetings">
-        This demo site showcases meetings in the San Mateo County fellowship of Alcoholics Anonymous, which has over 330 meetings every week.  This is only a DEMO, and in order for the meetings to be updated, an intergroup should adopt the code and keep their meetings current.  
+        This demo site showcases meetings in the San Mateo County fellowship of Alcoholics Anonymous, which has over 330 meetings every week.  Remember, this is only a DEMO; in order for the meetings to be updated, an intergroup is responsible for keeping the meetings current via the web-friendly interface.  
          <p></p>
-        The purpose of this project is to make it  <strong>easier</strong> for both local intergroups to keep meeting info current, and for people to search and find meetings in their area.</strong>       
-         <p></p>
-
             <%= link_to "Find a Meeting", meetings_path, class: "button" %>
 
       </div>
     </div>
 
-
-  <div class="span4">
-      <h3>Intergroup</h3>
-        <div class="centraloffice">
-
-           <div class="img-left"><%= link_to image_tag("latest_greatest.png", alt: "logo", title: "latest", width: "80%"), '#' %>
-           </div></div>   
-
-          <div class="centraloffice">Here is where you may put some interesting information pertinent to your local Intergroup.  For example, some fellowships may wish for their members to <%= link_to 'discover', '#' %> the latest happenings in the area, download flyers and more! <p></p> 
-          <%= link_to 'Learn more', '#' %> about your local service office, or <%= link_to 'contact us', '#' %> to get more information about anything on this site.</div>
-          </div>
+      
       </div>
   </div>
     

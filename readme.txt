@@ -1,18 +1,29 @@
-===============================================
-====== https://github.com/indie/intergroup.git
-
 Open-Source Intergroup Meetings
-License: Apache V2 (see bottom of the page)
-
+===============================================
+https://github.com/indie/intergroup.git
 LIVE DEMO:  http://demo.aasjonline.com
-
-======
 =============================================== 
 
-Free and open-source site template and meetings database structure with search, sort, export and import for Intergroup fellowships of AA or NA!  Need to get your dev environment set up? Follow this tutorial for Linux:  http://www.hackeress.com/tutorial-sublime
+Open-source site template and meetings database structure with search, sort, export and import for Intergroup fellowships of AA or NA!  Turn an Excel spreadsheet into a searchable database online.  
 
-This code allows you to turn an Excel spreadsheet formatted as a .csv of local meetings into a searchable database online
-======
+There are TWO options to get this working on your local .org NA or AA website:  
+
+	1. Experienced Ruby on Rails (RoR) developers may clone this repo to create and customize the full application on a hosted RoR-friendly server.  See "Tutorial" below
+
+	2. If that's beyond the scope of your group, HCS offers full-service deployment and yearly hosting for this application.  To proceed with this option, please
+		a) Submit a Good Faith payment:  http://www.hackeress.com/goodfaith
+		
+		b) Email:  lsc@hackeress.com an Excel spreadsheet that has at least 4 columns of data:
+	     	> Day & Time 	
+			> Meeting Name 	
+			> Location 	
+			> City
+		The Maps link (beginning with http:// is OPTIONAL, but if you'd like people to be able to find the meeting location via a map link, pleas include this)
+
+		c) Allow up to 72 hours to have your brand new mobile-friendly, map-linked, searchable meetings database live.   
+
+=============================================== 
+-- TUTORIAL -- 
 
 1.  Getting started -- on your local machine
 
@@ -24,17 +35,21 @@ This code allows you to turn an Excel spreadsheet formatted as a .csv of local m
 	$ rails s
 
 	Navigate to your localhost (usually http://localhost:3000) in your web browser, and go to
-	http://localhost:3000/signup -- administrative account creation is disabled by default.
+	http://localhost:3000/signup -- administrative account creation is disabled by default.  There are two options for creating new accounts (2a) or (2b)
 
-2.  Open your favorite editor and uncomment the code in 
+
+2a. Open your favorite editor and uncomment the code in 
+		
+		$ app/views/users/new.html.erb  
+
+		before you save and refresh the page.  
+
+2b. Command-line user creation => :name :email :password :password_confirmation
+
+
+3.  Now you may log in as the new admin user; in your browser go to:  http://localhost:3000/signin
 	
-	$ app/views/users/new.html.erb  
-
-	save and refresh the page.  
-
-3.  Now you may create new admin user; in your browser go to:  http://localhost:3000/signup
-
-	Where you may admin user and log-in.  Once in, you'll see a different view of the navigation menu. . . fabulous!  This is available for admins only, and the view differs when you're logged in as admin.  			
+	Once in, you'll see a different view of the navigation menu. . . fabulous!  This is available for admins only, and the view may be customized to appear differently for logged-in as admins.  			
 
 4.  Customize the search parameters as your own.  Find and enter your city library:  
 
@@ -68,13 +83,16 @@ This code allows you to turn an Excel spreadsheet formatted as a .csv of local m
 
 	If you run into trouble, look at the test file for hints on how to get it working; it's not recommended to start a file from scratch; copy (cp) the existing one, and paste in your data.  Leave the column headers alone; if the upload doesn't work, it's usually because the column headers are broken, or the columns are not completely "empty" when you copy over.  Copy one column at a time, just the info you need.  When it works, you'll see the success message:  "meetings imported successfully!"
 
+
 5.  Be sure to disable the signup page 
 
 	$ app/views/users/new.html.erb 
 
 	after you create the admin on the server.  Or, if you can create via command-line, don't worry about this file; just delete it all together.  You may also want to hide the "sign in" page for extra security
 
+
 6.  Edit the deploy.rb file to work on your server config.  This is beyond the scope of this tutorial.  
+
 
 7.  Leave a "thanks!" donation; big or small, any amount is greatly appreciated:  
 

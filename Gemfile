@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 
-gem 'rails', '3.2.13'
+gem 'rails', '3.2.14'
 gem 'bcrypt-ruby', '3.0.0'
 gem 'rails_autolink'
 gem 'nokogiri'
