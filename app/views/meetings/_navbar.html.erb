@@ -1,10 +1,7 @@
-
-<!-- begin debug to determine active status upon muliple-selected queries - uncomment to debug
-
+<!-- begin debug to determine actvie status upon muliple-selected queries -->
 <%#= @meeting_params.inspect %>    
 <%#= @extra_q.inspect %>    
-
-end debug -->
+<!-- end debug -->
 
 <div id="responsive-shorts">
 
@@ -13,34 +10,44 @@ end debug -->
         <li><%= link_to key, render_link("day_cont", val, @extra_q), 
         :style => render_css("day_cont", val, @extra_q) %></li>
         <% end %>
-    </ul><br />
-  
+    </ul>
+
+    <br />
+
     <ul class="navbar-city nav nav-pills">
         <% @param_data["city_cont"].each do | key, val | %>
         <li><%= link_to key, render_link("city_cont", val, @extra_q), 
         :style => render_css("city_cont", val, @extra_q) %></li>
         <% end %>
-    </ul><br />
+    </ul>
 
-    <div class="inst">Meeting codes - demo only; not all meetings have all applicable labels </div>
+    <br />
 
     <ul class="navbar-codes nav nav-pills">
         <% @param_data["codes_cont"].each do | key, val | %>
         <li><%= link_to key, render_link("codes_cont", val, @extra_q), 
         :style => render_css("codes_cont", val, @extra_q)  %></li>
         <% end %>
-        <li><%= link_to 'recently updated', '/?q[s]=updated_at+desc' %></li>
-        <li><%= link_to 'chip meetings', '/meetings?utf8=%E2%9C%93&q[name_or_notes_or_codes_cont]=chip&commit=Search' %></li>
-    </ul>
+        
+        <% @param_data["name_or_notes_cont"].each do | key, val | %>
+        <li><%= link_to key, render_link("name_or_notes_cont", val, @extra_q), 
+        :style => render_css("name_or_notes_cont", val, @extra_q)  %></li>
+        <% end %>
+        </ul>
+
+    <br />
 
     <div class="searchbox">
       <%= search_form_for @q do |f| %>
       <%= f.text_field :name_or_day_or_address_or_city_or_notes_or_codes_cont %>&nbsp;
       <%= f.submit "Search", class: 'btn btn-small' %>
-      <div class="btn btn-mini"><%= link_to 'Clear All', 'clear' %></div>   
+      <div class="btn btn-mini"><%= link_to 'Clear All', 'clear' %></div>
+
       <% end %>
+
+
     </div>
   </div>
 
-
 </div>
+

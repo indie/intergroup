@@ -1,4 +1,5 @@
 #responsive-shorts { 
+  font-family: 'Source Sans Pro', 'Open Sans', 'Lucida Grande', sans;
   width: auto;
   margin-left: 1px;
   margin-right: 1px;
@@ -29,12 +30,9 @@
         margin-top: -3px;
         margin-bottom: -4px;
         li {
-        margin: 5px;
-          -webkit-border-radius: 5px;
-          -moz-border-radius: 5px;
-          border-radius: 5px;
-        padding-right: -3px;
-        }        
+        padding-left: 5px;
+        padding-right: 5px;
+        }            
       }
     .navbar-city {
         font-size: 91%;
@@ -75,3 +73,31 @@
 hr { border: 0; height: 1px; background: #444354; background-image: -webkit-linear-gradient(left, #ccc, #444354, #ccc); background-image: -moz-linear-gradient(left, #ccc, #444354, #ccc); background-image: -ms-linear-gradient(left, #ccc, #444354, #ccc); background-image: -o-linear-gradient(left, #ccc, #444354, #ccc); }
   }
 
+
+ /* search-friendly */
+
+.search-instructions {
+  font-family: 'Open Sans', 'Source Sans Pro', Droid Sans, sans-serif;
+  font-size: 0.95em;
+  ul {
+  padding: 2px;
+  li {
+  padding-top: 2px;
+  btn-mini { size: 75%; }
+  }
+  }
+}
+
+.searchbox {
+  align: left;
+  span: span5;
+  justify: left;
+  margin-top: -23px;
+  margin-bottom: -7px;
+  margin-left: -15px;
+}
+
+.search-options {
+  margin-left: 2%;
+  margin-top: -4px;
+}

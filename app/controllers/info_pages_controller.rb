@@ -1,4 +1,5 @@
 class InfoPagesController < ApplicationController
+
   def home
   end
 
@@ -7,4 +8,8 @@ class InfoPagesController < ApplicationController
 
   def literature
   end
+
+  def daily_reflection
+  end
+
 end

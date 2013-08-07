@@ -1,26 +1,16 @@
-Open-Source Intergroup Meetings
 ===============================================
-https://github.com/indie/intergroup.git
-LIVE DEMO:  http://demo.aasjonline.com
+   Open-Source Intergroup Meetings   
+===============================================
+ https://github.com/indie/intergroup.git     
+ LIVE DEMO:  http://demo.aasjonline.com      
 =============================================== 
 
 Open-source site template and meetings database structure with search, sort, export and import for Intergroup fellowships of AA or NA!  Turn an Excel spreadsheet into a searchable database online.  
 
 There are TWO options to get this working on your local .org NA or AA website:  
+	1. Experienced Ruby on Rails (RoR) developers may clone this repo to create and customize the full application on a hosted RoR-friendly server.  Follow -- tutorial -- below
 
-	1. Experienced Ruby on Rails (RoR) developers may clone this repo to create and customize the full application on a hosted RoR-friendly server.  See "Tutorial" below
-
-	2. If that's beyond the scope of your group, HCS offers full-service deployment and yearly hosting for this application.  To proceed with this option, please
-		a) Submit a Good Faith payment:  http://www.hackeress.com/goodfaith
-		
-		b) Email:  lsc@hackeress.com an Excel spreadsheet that has at least 4 columns of data:
-	     	> Day & Time 	
-			> Meeting Name 	
-			> Location 	
-			> City
-		The Maps link (beginning with http:// is OPTIONAL, but if you'd like people to be able to find the meeting location via a map link, pleas include this)
-
-		c) Allow up to 72 hours to have your brand new mobile-friendly, map-linked, searchable meetings database live.   
+	2. If that's beyond the scope of your group, HCS offers full-service deployment and yearly hosting for this application.  To proceed with this option, please see the demo page
 
 =============================================== 
 -- TUTORIAL -- 
@@ -79,7 +69,7 @@ There are TWO options to get this working on your local .org NA or AA website:
 		> Location 	
 		> City
 
-	The rest of the columns are optional.  The "Maps" column can be the most cantankerous; just plod through and get your Google Maps or Yahoo Maps or Bing Maps links.   
+	The rest of the columns are optional.  The "Maps" column can be the most cantankerous; just plod through and get your Google Maps or Yahoo Maps or Bing Maps links.  People love to be able to look up meeting locations on their phones.   
 
 	If you run into trouble, look at the test file for hints on how to get it working; it's not recommended to start a file from scratch; copy (cp) the existing one, and paste in your data.  Leave the column headers alone; if the upload doesn't work, it's usually because the column headers are broken, or the columns are not completely "empty" when you copy over.  Copy one column at a time, just the info you need.  When it works, you'll see the success message:  "meetings imported successfully!"
 
@@ -95,7 +85,6 @@ There are TWO options to get this working on your local .org NA or AA website:
 
 
 7.  Leave a "thanks!" donation; big or small, any amount is greatly appreciated:  
-
 	--> http://www.hackeress.com/thanks
 
 
