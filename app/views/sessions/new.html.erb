@@ -6,7 +6,9 @@
   <div class="span6 offset3">
 
     <h2>Authorized to sign in?</h2>
-    
+    <div class="inst"> An aasanjose.org authorization is required</div>
+
+
     <%= form_for(:session, url: sessions_path) do |f| %>
 
       <%= f.label :email %>
@@ -20,8 +22,8 @@
       <%= f.submit "Sign in", class: "btn" %>
     <% end %>
 
-    <div class="inst"> Authorization is required to sign in and edit meetings. See source code for details.</div>
-    <%= link_to "Sign up now!", signup_path %></p>
+    <!-- <p>Authorized to be an admin for this site?<br />
+    <%#= link_to "Sign up now!", signup_path %></p>
   </div>
 </div>
 

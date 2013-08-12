@@ -1,3 +1,4 @@
+
 <%- model_class = Meeting -%>
 
 <div id="user_header">
@@ -5,23 +6,31 @@
     Logged in as: <%= current_user.email %>.
    <% end %>
 </div>
-    <div class="hotline"><strong>(650) 577 - 1310</strong><div class="helpline">HELP LINE AVAILABLE 24/7</div></div>
 
-<br />
+  <div class="hotline">
+    (000) 000 - 0000
+    <div class="helpline">
+      HELP LINE AVAILABLE 24/7  
+    </div>
+  </div>
 
-<h4>San Mateo County Meetings (demo) </h4>
-<div class="search-instructions">
 
-   <strong>&nbsp;&nbsp;How to find meetings:</strong>
+  <div class="search-instructions">
+
+   <strong>How to find meetings:</strong>
    <ul>
-      <li> Click or tap once to add an option to the search; click/tap again to remove it, or use the <div class="btn btn-mini"><%= link_to 'RESET', 'clear' %></div> button
-      <li> Look-up meeting or group name, building, street name using the search box
+      <li> Click or tap once to add an option to the search; click/tap again to remove it, or use the <div class="btn btn-mini"><%= link_to 'RESET', 'clear'%></div> button</li>
+      <li> Look-up meeting or group name, building or street name using the search box</li>       
+    
    </ul> 
+
+
    </div>
 
-<div class="nav"> 
-  <%= render 'meetings/navbar' %>
-</div>
+  <div class="nav"> 
+    <%= render 'meetings/refine' %>
+  </div>
+
 
 <!-- This list is sortable by column header --> 
 
@@ -29,13 +38,17 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th class="numeric"><%= sort_link @search, :day, "Day & Time" %></th>
+
+      <!-- uncomment to debug --> 
+      <%#= @search.inspect %>
+      
+      <th class="numeric"><%= sort_link @search, :day, "Day & Time", { :controller => 'meetings', action: "index" }  %></th>
       <th class="numeric"><%= sort_link @search, :name, "Meeting Name" %></th>
       <th class="numeric"><%= sort_link @search, :location, "Location"  %></th>
       <th class="numeric"><%= sort_link @search, :city, "City" %></th>
       <th class="numeric"><%= sort_link @search, :codes, "Codes" %></th>
       <th class="numeric"><%= sort_link @search, :map, "Map"  %> </th>
-      <th class="numeric"><%= sort_link @search, :notes, "Notes" %></th>
+      <th class="numeric"><%= sort_link @search, :notes, "" %></th>
       <% if signed_in? %>
         <th class="numeric"><%= sort_link @search, :created_at, "Added" %></th>
         <th class="numeric"><%= sort_link @search, :updated_at, "Updated" %></th>
@@ -53,41 +66,36 @@
         <td data-title="City"><%= meeting.city %></td>
         <td data-title="Codes"><%= meeting.codes %></td>
         <td data-title="Map"><%= link_to image_tag("gmaps.png", alt: "map", height: "37", width: "37"), url_for(meeting.map), target: "_blank" %></td>
-        <td data-title="Notes"><%= meeting.notes %></td>
+        <td data-title=""><%= meeting.notes %></td>
         <% if signed_in? %>
             <td data-title="Added">          
-              <div class="admincol"><%=link_to meeting.created_at %></div>
-            </td>
+              <div class="admincol"><%=link_to meeting.created_at %></div></td>
             <td data-title="Updated">
-              <div class="admincol"><%=link_to meeting.updated_at %></div>
-            </td>              
-            <td data-title="ID"><%= link_to meeting.id, meeting_path(meeting) %>
-            </td>
-            <td><%= link_to t('.edit', :default => t("helpers.links.edit")),
+              <div class="admincol"><%=link_to meeting.updated_at %></div></td>          
+            <td data-title="ID"><%= link_to meeting.id, meeting_path(meeting) %></td>
+            <td>
+              <%= link_to t('.edit', :default => t("helpers.links.edit")),
                         edit_meeting_path(meeting), :class => 'btn btn-mini' %>
-                <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
                         meeting_path(meeting),
                         :method => :delete,
                         :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
                         :class => 'btn btn-mini' %>                    
             </td>
-          <% end %>  
+          <% end %>
       </tr>
     <% end %>
   </tbody>
 
-
 </table>
+
 </div>
 
-
-<div class="inst"> Current as of July 16, 2013 </div>
-<div class="meeting-count"><%= Meeting.find(:all).length %> meetings in San Mateo County Intergroup Area</div>
-<br />
+<div class="meeting-count"><%= Meeting.find(:all).length %> meetings per week in our fellowship</div>
 
 
 <p>
-  Download ALL:
+  Download all meetings:
   <%= link_to "CSV", meetings_path(format: "csv") %> |
   <%= link_to "Excel", meetings_path(format: "xls") %>
 </p>

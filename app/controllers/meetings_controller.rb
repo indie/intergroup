@@ -4,9 +4,12 @@ class MeetingsController < ApplicationController
   # GET /meetings.json
   
   def index 
+    print request.env
+
     if not session[:meeting_params] 
       session[:meeting_params] = {}
     end
+    
     @meeting_params = session[:meeting_params]
     if params[:q]
       @first = true 
@@ -18,18 +21,17 @@ class MeetingsController < ApplicationController
           session[:meeting_params][key]=value
         end
         @first = false 
-        end
-        if params[:q].include? :name_or_day_or_address_or_city_or_notes_or_codes_cont
+      end
+    
+    if params[:q].include? :name_or_day_or_address_or_city_or_notes_or_codes_cont
           # session.delete(:meeting_params)
           (session[:meeting_params]).each do | key, value | 
             session[:meeting_params].delete key
           end
-        end  
-
+       end   
     end
-
+  
     @extra_q = session[:meeting_params]
-
 
     @param_data = {
       "day_cont" => {
@@ -85,9 +87,14 @@ class MeetingsController < ApplicationController
         "Chip" => "chip"} 
       }
 
+
+
+
     @q = Meeting.search(params[:q])
-    @meetings = @q.result(:distinct => true)
-    @search = Meeting.search(params[:q])
+
+    @search = Meeting.search(params[:q]) 
+    @meetings = @search.result(:distinct => true).order('day asc')
+
     respond_to do |format|
       format.html # index.html.erb
       format.txt { render txt: @meetings.to_csv } # make data render txt in browser -- might work, might not
@@ -140,12 +147,13 @@ class MeetingsController < ApplicationController
 
   # POST /meetings
   # POST /meetings.json
+
   def create
     @meeting = Meeting.new(params[:meeting])
 
     respond_to do |format|
       if @meeting.save
-        format.html { redirect_to @meeting, notice: 'Meeting was successfully created.' }
+        format.html { redirect_to meetings_path, notice: 'Meeting was successfully created.' }
         format.json { render json: @meeting, status: :created, location: @meeting }
       else
         format.html { render action: "new" }

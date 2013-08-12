@@ -1,11 +1,2 @@
 <h1>InfoPages#literature</h1>
 <p>Find me in app/views/info_pages/literature.html.erb</p>
-
-
-<% PAGE_URL = 'http://www.aa.org/lang/en/aareflections.cfm' %>
-page = Nokogiri::HTML(open(PAGE_URL))
-   
-puts page.css("title")[0].text   # => Alcoholics Anonymous
-puts page.css('div#content')[0].text
-
-<% end  %>
