@@ -8,9 +8,11 @@
 Open-source site template and meetings database structure with search, sort, export and import for Intergroup fellowships of AA or NA!  Turn an Excel spreadsheet into a searchable database online.  
 
 There are TWO options to get this working on your local .org NA or AA website:  
-	1. Experienced Ruby on Rails (RoR) developers may clone this repo to create and customize the full application on a hosted RoR-friendly server.  Follow -- tutorial -- below
+	1. Experienced Ruby on Rails (RoR) developers may clone this repo to create and customize the full application locally and deploy it to a hosted RoR-friendly server.  Follow the tutorial below to build the site locally.  
 
-	2. If that's beyond the scope of your group, HCS offers full-service deployment and yearly hosting for this application.  To proceed with this option, please see the demo page
+	2. If the technical stuff is beyond the scope of your group, HCS offers full-service deployment and yearly hosting for this application.  To proceed with this option, please see the demo page
+
+SORRY, but Hackeress Creative Studio does not offer free tech support beyond what's in this fabulous tutorial.  
 
 =============================================== 
 -- TUTORIAL -- 
@@ -20,21 +22,27 @@ There are TWO options to get this working on your local .org NA or AA website:
 	$ mkdir yournewwebsite.org
 	$ git clone https://github.com/indie/intergroup.git
 	$ cd intergroup/
+        $ bundle install
 	$ rake db:create
 	$ rake db:migrate
 	$ rails s
 
 	Navigate to your localhost (usually http://localhost:3000) in your web browser, and go to
-	http://localhost:3000/signup -- administrative account creation is disabled by default.  There are two options for creating new accounts (2a) or (2b)
+	http://localhost:3000/signup 
+
+	Administrative account creation is disabled by default.  There are two options for creating new accounts (2a) or (2b):
 
 
 2a. Open your favorite editor and uncomment the code in 
 		
 		$ app/views/users/new.html.erb  
 
-		before you save and refresh the page.  
+	before you save and refresh the page.  Navigate to:  http://localhost:3000/signup to create the admin user  -- OR -- 
 
-2b. Command-line user creation => :name :email :password :password_confirmation
+2b. Command-line user creation
+	$ rails c 
+	irb(main):001:0> user = User.create(:name => "admin", :email => "you@localaa.org", :password => 'PASSWORD', :password_confirmation => 'PASSWORD')
+	irb(main):002:0> exit
 
 
 3.  Now you may log in as the new admin user; in your browser go to:  http://localhost:3000/signin
@@ -43,16 +51,18 @@ There are TWO options to get this working on your local .org NA or AA website:
 
 4.  Customize the search parameters as your own.  Find and enter your city library:  
 
-    $ cd /app/controllers/meetings-controller.rb
+    $ cd /app/controllers
+    $ vi meetings-controller.rb
 
-	EDIT lines 47 - 67 with your cities.  Also, feel free to edit the "Codes" section for custom codes if yours differ.  
+	EDIT lines 46 - 70 with your cities.  Also, feel free to edit the "Codes" section for custom codes if yours differ.  
 
-	Now you may upload a CSV of data; in the navigation menu, go to:  
-		>> Add New Meetings (Scroll to the bottom of the page)
-		>> Click on "Browse"
-		>> Upload the CSV of data 
+5.  Now you may upload a CSV of data; in the navigation menu, go to:  
+		a) Add New Meetings (
+		b) Click on "Browse"  (it's at the bottom of the page)
+		c) Select the formatted .csv file from your machine
+		d) Upload the CSV of data 
 
-	Use the "san-mateo-aa.csv" in intergroup/db/san-mateo-aa.csv if you'd like to confirm it actually works -- it does! -- just be patient, as it can take 20 or 30 seconds for the full upload ;) You'll see an orange dialogue box that says: "Meetings imported successfully"
+	Use the "san-mateo-aa.csv" in intergroup/db/san-mateo-aa.csv if you'd like to confirm it actually works -- it does! -- just be patient, as it can take 20 or 30 seconds for the full upload, depending on how many meetings you're uploading ;) You'll see an orange dialogue box that says: "Meetings imported successfully"
 
 		>> If you upload this and need to reset the DB to test your own csv on our local machine, use:  
 
@@ -61,9 +71,9 @@ There are TWO options to get this working on your local .org NA or AA website:
 				  
 			to clear out any messed up imports.  
 		
-		>> Else, just upload the .CSV file with your local area meetings  
+		>> Else, just upload the .csv file with your local area meetings  
 					
-	You need to have an entry in every column for 
+	!IMPORTANT -- For EVERY meetings, there needs to be an entry these columns: 
 		> Day & Time 	
 		> Meeting Name 	
 		> Location 	
@@ -74,36 +84,38 @@ There are TWO options to get this working on your local .org NA or AA website:
 	If you run into trouble, look at the test file for hints on how to get it working; it's not recommended to start a file from scratch; copy (cp) the existing one, and paste in your data.  Leave the column headers alone; if the upload doesn't work, it's usually because the column headers are broken, or the columns are not completely "empty" when you copy over.  Copy one column at a time, just the info you need.  When it works, you'll see the success message:  "meetings imported successfully!"
 
 
-5.  Be sure to disable the signup page 
+6.  Don't forget to disable the signup page 
 
 	$ app/views/users/new.html.erb 
 
-	after you create the admin on the server.  Or, if you can create via command-line, don't worry about this file; just delete it all together.  You may also want to hide the "sign in" page for extra security
+	after you create the admin on the server.  Or, if you can create via command-line, don't worry about this file (if you never uncommented it); just delete it all together.  You may also want to hide the "sign in" page for extra security
+
+7.  Edit the deploy.rb file to work on your server config.  This is beyond the scope of this tutorial.  
 
 
-6.  Edit the deploy.rb file to work on your server config.  This is beyond the scope of this tutorial.  
-
-
-7.  Leave a "thanks!" donation; big or small, any amount is greatly appreciated:  
+8.  Please leave a "thanks!" donation; big or small, any amount is greatly appreciated:  
 	--> http://www.hackeress.com/thanks
 
 
 =============================================== 
-===== Begin legal promulgation for Apache v2
+=====       Begin legal promulgation      =====
 
  Copyright  2013   hackeress creative studio
 
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
+   Licensed under the Apache License, Version 2.0 
+   (the "License"); you may not use this file except 
+   in compliance with the License. You may obtain 
+   a copy of the License at
 
        http://www.apache.org/licenses/LICENSE-2.0
 
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
+   Unless required by applicable law or agreed to 
+   in writing, software distributed under the 
+   License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, 
+   either express or implied. See the License 
+   for the specific language governing permissions 
+   and limitations under the License.
 
-====== End legal promulgation for Apache v2
+======       End legal promulgation       =====
 ===============================================

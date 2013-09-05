@@ -84,7 +84,8 @@ class MeetingsController < ApplicationController
         "Young People" => "Y"},
 
       "name_or_notes_cont" => {
-        "Chip" => "chip"} 
+        "Chip" => "chip",
+        "Newcomer" => "newcomer"}, 
       }
 
 
