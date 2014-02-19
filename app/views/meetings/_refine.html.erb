@@ -5,6 +5,8 @@
 
 <div id="responsive-shorts">
 
+<br /><br />
+
     <ul class="navbar-day nav nav-pills">
         <% @param_data["day_cont"].each do | key, val | %>
         <li><%= link_to key, render_link("day_cont", val, @extra_q), 
@@ -22,7 +24,7 @@
     </ul>
 
     <br />
-    <div class="inst"> This section for demo only, not all meetings have applicable codes</div>
+    <div class="inst"> This section for demo only, not all codes assigned to meetings</div>
 
     <ul class="navbar-codes nav nav-pills">
         <% @param_data["codes_cont"].each do | key, val | %>

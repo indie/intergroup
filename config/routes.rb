@@ -3,6 +3,8 @@ require 'api_constraints'
 Aasj::Application.routes.draw do
 # infopages
 
+root to: 'meetings#index'
+    
   match '/home', to: 'info_pages#home'
   match '/colophon', to: 'info_pages#colophon'
   match '/literature', to: 'info_pages#literature'
@@ -11,7 +13,6 @@ Aasj::Application.routes.draw do
 
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
-    root to: 'meetings#index'
       match '/signup',  to: 'users#new'
       match '/signin',  to: 'sessions#new'
       match '/signout', to: 'sessions#destroy', via: :delete

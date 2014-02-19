@@ -25,12 +25,11 @@
                 Central Office <b class="caret"></b>
               </a>
                 <ul class="dropdown-menu">
-                <li><%= link_to "Map & Hours", '#' %></li>  
-                <li><%= link_to "Meeting Update Form", '#' %></li>
-                <li><%= link_to "Literature", '#' %></li>  
-                <li><%= link_to "Donate", '#' %></li>
-                <li><%= link_to "Events", '#' %></li>
-                <li><%= link_to "Service", '#' %></li>
+                <li><%= link_to "Map", 'http://goo.gl/maps/eCUwq' %></li>  
+                <li><%= link_to "Literature", '#' %></li> 
+                <li><%= link_to "Secretary Registration", 'http://www.aa-san-mateo.org/RegistrationDisclaimer.html' %></li>
+                  <li><%= link_to "Service", 'http://www.aa-san-mateo.org/' %></li>
+                  <ul class="divider"></ul> 
                 </ul>
       
             <li id="fat-menu" class="dropdown">
@@ -38,7 +37,7 @@
                 Newsletters <b class="caret"></b>
               </a>
                 <ul class="dropdown-menu">
-                <li><%= link_to "Current Year, 2013", '#' %>
+                <li><%= link_to "Current Year", '#' %>
                 <li><%= link_to "Archives", '#' %></li>
               </ul>
 
@@ -60,7 +59,7 @@
             <% else %>
 
             <!-- This is the default visitor menu view -->
-
+            <li><%= link_to "San Mateo AA", 'http://www.aa-san-mateo.org' %>
             <li><%= link_to "About this Demo", home_path %></li>
             <li><%= link_to "Meetings", meetings_path %></li>
 
@@ -69,11 +68,11 @@
                 Intergroup <b class="caret"></b>
               </a>
                 <ul class="dropdown-menu">
-                  <li><%= link_to "Map & Hours", '#' %></li>  
+                  <li><%= link_to "Map", 'http://goo.gl/maps/eCUwq' %></li>  
                   <li><%= link_to "Meeting Update Form", '#' %></li>
                   <li><%= link_to "Literature", '#' %></li>  
-                  <li><%= link_to "Donate", '#' %></li>
-                  <li><%= link_to "Service", '#' %></li>
+                  <li><%= link_to "Secretary Registration", 'http://www.aa-san-mateo.org/RegistrationDisclaimer.html' %></li>
+                  <li><%= link_to "Service", 'http://www.aa-san-mateo.org/' %></li>
                   <ul class="divider"></ul>
                   <li><%= link_to "Intergroup Office sign-in ", signin_path %></li>
                 </ul>
@@ -83,33 +82,24 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Newsletters<b class="caret"></b>
               </a>
                 <ul class="dropdown-menu">
-                <li><%= link_to "Current Year, 2013", '#' %>
-                <li><%= link_to "Archives", '#' %></li>
+                <li><%= link_to "Current Year", 'www.aa-san-mateo.org/newsletter.html' %>
+                <li><%= link_to "Archives", 'www.aa-san-mateo.org/archives-newsletter.html' %></li>
               </ul>
-            <li><%= link_to "Upcoming Events", '#' %></li>
+            <li><%= link_to "Upcoming Events", 'http://www.aa-san-mateo.org/CalendarTemp.pdf' %></li>
             
            <li id="fat-menu" class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">More About AA <b class="caret"></b>
             </a>
               <ul class="dropdown-menu">  
-                <li><%= link_to "More About AA", '#' %></li>
-                <li><%= link_to "FAQ for the Newcomer", '#' %></li>
-                <li><%= link_to "Anonymity Letter", '#' %></li>
-                <li><%= link_to "Alcoholic in Your Life?", '#' %></li>
-                <li><%= link_to "Court Cards & Attendance Slips", '#' %>
+                <li><%= link_to "More About AA", 'http://info.aasjonline.com/more-about-aa/' %></li>
+                <li><%= link_to "FAQ for the Newcomer", 'http://info.aasjonline.com/faq/' %></li>
+                <li><%= link_to "Anonymity Letter", 'http://info.aasjonline.com/anonymity-letter/' %></li>
+                <li><%= link_to "Alcoholic in Your Life?", 'http://info.aasjonline.com/alcoholic-in-your-life/' %></li>
+                <li><%= link_to "Court Cards & Attendance Slips", 'http://info.aasjonline.com/more-about-aa/court-cards/' %>
                 <ul class="divider"></ul>
                 <div class="offsite">&nbsp;&nbsp;&nbsp;&nbsp;offsite links</div>
                 <li><%= link_to "AA World Services", 'http://www.aa.org', target: 'blank' %></li>  
                 <li><%= link_to "Grapevine Meeting in a Magazine", 'http://www.aagrapevine.org' %></li>                
-              </ul>
-
-              <li id="fat-menu" class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                Another Menu <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li><%= link_to "Interesting Something", '#' %></li>
-                <li><%= link_to "Interesting Something Else", '#' %></li>
               </ul>
              <% end %>
 
