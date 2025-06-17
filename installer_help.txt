@@ -93,9 +93,6 @@ SORRY, but Hackeress Creative Studio does not offer free tech support beyond wha
 7.  Edit the deploy.rb file to work on your server config.  This is beyond the scope of this tutorial.  
 
 
-8.  Please leave a "thanks!" donation; big or small, any amount is greatly appreciated:  
-	--> http://www.hackeress.com/thanks
-
 
 =============================================== 
 =====       Begin legal promulgation      =====
