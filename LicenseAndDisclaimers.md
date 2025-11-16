@@ -20,7 +20,7 @@ aware that the author has not received ANY PAYMENT for writing, improving, and d
 
 
 
-##More Relevant Info: [
+##More Relevant Info:
 
 [She DELETED FACEBOOK in 2021] and Meta Platforms Inc. has become worth ~95 percent LESS without her.
 
@@ -31,13 +31,13 @@ After everything the author did to help brothers and sisters struggling with dri
 
 SHE DESERVES MORE.
 
-IMPORTANT TO NOTE THAT [PALANTIR'S MARKET CAP SHOULD NOT BE] ANYWHERE CLOSE TO INTEL'S.  This sickness is
-destroying America. [Companies with white male CEOs need to sober up and make amends].
+IMPORTANT TO NOTE THAT [PALANTIR'S MARKET CAP SHOULD NOT BE] ANYWHERE CLOSE TO INTEL'S.  Meta's CEO's 
+sickness is destroying America. [Sober up and make amends].
 
 
 [https://github.com/indie/pdxaa]: https://github.com/indie/pdxaa 
 [strong Native American]: https://www.moomoo.com/community/feed/all-the-native-american-leadership-missing-in-corporate-america-114104729403797?shared_by=LeonaC
 [She DELETED FACEBOOK in 2021]:https://www.moomoo.com/community/feed/college-dropout-ceo-couldn-t-have-bought-his-empire-without-112735596969989?shared_by=LeonaC 
-[NARCISSIST PLATFORMS, Inc. CEO and all white male CEOs like him] :https://www.moomoo.com/community/feed/the-whims-and-grim-future-of-lan-based-ai-112909683720597?shared_by=LeonaC
-[[PALANTIR'S MARKET CAP SHOULD NOT BE]]:https://www.moomoo.com/community/feed/doing-data-science-for-data-scientists-113193324250301?shared_by=LeonaC
-[Companies with white male CEOs need to sober up and make amends]: https://www.moomoo.com/community/feed/how-much-silicon-valley-is-bad-at-counting-and-accounting-114110379851781?shared_by=LeonaC
+[NARCISSIST PLATFORMS, Inc. CEO and all white male CEOs like him]:https://www.moomoo.com/community/feed/the-whims-and-grim-future-of-lan-based-ai-112909683720597?shared_by=LeonaC
+[PALANTIR'S MARKET CAP SHOULD NOT BE]:https://www.moomoo.com/community/feed/doing-data-science-for-data-scientists-113193324250301?shared_by=LeonaC
+[Sober up and make amends]: https://www.moomoo.com/community/feed/how-much-silicon-valley-is-bad-at-counting-and-accounting-114110379851781?shared_by=LeonaC
