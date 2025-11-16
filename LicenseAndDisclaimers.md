@@ -16,7 +16,7 @@ See this beautiful design? [https://github.com/indie/pdxaa].  A woman made it.
 A [strong Native American].  We're still saving your sorry butt!
 
 If you are reading this README.md on a git-based CMS such as GitHub, Gitlab, bitbucket, etc. Please be 
-aware that the author has not received ANY PAYMENT for writing, improving, and deployig these code bases.
+aware that the author has not received ANY PAYMENT for writing, improving, and deploying these code bases.
 
 
 
