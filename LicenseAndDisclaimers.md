@@ -1,37 +1,43 @@
 # ANONYMOUS PEOPLES' LICENSE AND DISCLAIMERS
 
-(not a highbrow license here, just the facts, friends)
+Not a highbrow license here, just the facts, friends
+
+* Author has received NO PAYMENT WHATSOEVER for this code.
+
+* This code was transformed into a Wordpress Plugin in 2014, but its original design works  as intended -- without advertising any for-profit company.
+
+# PLEASE ENSURE THE WORDPRESS PLUGIN BASED ON THIS CODE BASE DOES NOT ADVERTISE ANY FOR-PROFIT COMPANIES
+
+* YOU MAY NOT COPY THIS CODE TO TRAIN ANY Large Language Model
+
+* YOU MAY NOT COPY THIS CODE in any for-profit AI query or application 
+
+
+## LEGAL NOTICES
+
+Note that a "pro bono attorney" is not the same as a "nonprofit consultant".  This project 
+was in the same vein. Technology experts ought be classified as parallel experts in their fields,
+and compensated the same as the Silicon Valley "tech bros" no matter WHAT GENDER they are. No matter 
+WHAT RACE they are.  
+
+SUPPORTING DIVERSITY, EQUITY AND INCLUSION IS MANDATORY FOR ALL USERS OF THIS CODE BASE
 
 ## FACEBOOK IS NOT A PLACE FOR ANONYMOUS PEOPLE
 
-Author DOES NOT APPROVE
-AND NEVER HAS APPROVED PLACEMENT OF HER CODE INTO WORDPRESS SITES WITH FACEBOOK LOGOS EMBEDDED 
-AND NEVER HAS APPROVED PLACEMENT OF HER CODE INTO WORDPRESS SITES INSTAGRAM LOGOS   
-
-## LEGAL NOTICE
-Note that a "pro bono attorney" is not the same as a "nonprofit consultant".  This project 
-was in the same vein. Technology experts ought be classified as parallel experts in their field,
-and compensated the same as the Silicon Valley "tech bros" (mostly white males) are being 
-compensated!  No matter WHAT GENDER they are. No matter WHAT RACE they are.  
-
-DEI IS THE ONLY WAY.
-
-The author of this repo has received NO PAYMENT WHATSOEVER for this code, 
-and NO COMPANY OR ORGANIZATION MAY USE IT FOR TRAINING AI HOW TO CODE WITHOUT EXPRESS WRITTEN 
-CONSENT OF THE AUTHOR. 
-
-===================
-
 Meta's CEO is unethical.  He's not just a little bit unethical, he is __despicably__ unethical.  Don't 
-just take my word for it.  The FACT is that Meta is being sued for 1.4 TRILLION DOLLARS right now because 
+just take Author's word for it.  The FACT is that Meta is being sued for 1.4 TRILLION DOLLARS right now because 
 today's youth -- your kids, nieces, nephews, maybe your grandkids -- are dropping dead from overdoses, suicides 
-and depression.  
+and depression.  The author of this repo donated code to HELP suffering alcoholics and addicts.  The 
+only human being in America who wants them drunk, addicted, depressed and doomscrolling all the time is that 
+unethical CEO of Meta Platforms. 
 
-The root cause of these deaths is from being bullied, humiliated, and sometimes being stalked on non-anonymous
-social media.  Some of them were abused by child predators not unlike those in the Epstein files.  The youth of 
-today have never been more hopeless about their future.  
+The root cause of deaths in youth today is from being bullied or humiliated into suicide, overdose, or 
+, and sometimes being stalked before homicide.  Several were abused by child predators not unlike those in 
+the Epstein files.  The youth of today have never been more hopeless about their future.  
 
 I became a University-level EDUCATOR because I wanted to change their hopelessness into hopefulness.  
+
+## ABOUT ETHICS
 
 Meta's CEO  dropped out of college, never completing so much as an Associate’s degree level of schooling. And 
 actually, if you do the research, you will learn that Mark has NEVER had a real job ... he has never had employment 
@@ -50,7 +56,6 @@ DISCLAIMERS
 See this beautiful design? [https://github.com/indie/pdxaa].  A woman made it.  A [strong Native American] made it.
 
 [Author DELETED FACEBOOK in 2021]
-
 
 
 [https://github.com/indie/pdxaa]: https://github.com/indie/pdxaa 
