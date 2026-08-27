@@ -1,4 +1,4 @@
-# A case study in Open-Source Code
+# A Case Study in Open-Sourced Code
 ## Streamlining intra-group communications 
 
 Here are the [License and Disclaimers]
