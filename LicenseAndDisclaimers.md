@@ -29,21 +29,21 @@ SUPPORTING DIVERSITY, EQUITY AND INCLUSION IS MANDATORY FOR ALL USERS OF THIS CO
 ## FACEBOOK IS NOT A PLACE FOR ANONYMOUS PEOPLE
 
 Meta's CEO is unethical.  He's not just a little bit unethical, he is __despicably__ unethical.  Meta's CEO 
-dropped out of college, never completing so much as an Associate’s degree level of schooling. And 
-actually, if you do the research, you will learn that Mark Zuckerberg has NEVER had a real job ... he has NEVER 
-had employment where he had to report to a supervisor or a manager. 
+dropped out of college, never completing so much as an Associate’s degree level of schooling. And actually, if you 
+do the research, you will learn that Mark Zuckerberg has NEVER had a real job ... he has NEVER had employment where 
+he had to report to a supervisor or a manager.  EVER.  
 
 Meta Platforms Inc. is being sued for 1.4 TRILLION DOLLARS RIGHT NOW because today's youth -- your kids, nieces, 
-nephews, maybe your grandkids -- are dropping dead from overdoses, suicides and depression at an alarming rate.  Th
-e root cause of deaths in youth today? Bullied or humiliated into suicide, overdose, being stalked before homicide.  
+nephews, maybe your grandkids -- are dropping dead from overdoses, suicides and depression at an alarming rate.  
+The root cause of deaths in youth today? Bullied or humiliated into suicide, overdose, being stalked before homicide.  
 Several youth drink because they were abused by child predators not unlike those in the Epstein files. Epstein and 
 Mark Zuckerberg ate together often, and Instagram was used to advertise numerous sex trafficking rings both in 
-America and abroad.
+America and abroad. 
 
-The youth of today have never been more hopeless about their future.  
+Let the 1.4 Trillion dollar lawsuit go to trial by JURY. DO NOT SETTLE OUT OF COURT.
 
+The youth of today have never been more hopeless about their future, and deserve justice.  
 
-And so the Author became a University-level EDUCATOR because to change the hopelessness of youth into hopefulness.  
 
 ## ABOUT ETHICS
 
