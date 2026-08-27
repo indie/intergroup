@@ -4,7 +4,7 @@ Not a highbrow license here, just the facts, friends
 
 * Author has received NO PAYMENT WHATSOEVER for this code.
 
-* This code was transformed into a Wordpress Plugin in 2014, but its original design works  as intended -- without advertising any for-profit company.
+* This code was transformed into a Wordpress Plugin in 2014, but its original design works as intended -- without advertising any for-profit company.
 
 # PLEASE ENSURE THE WORDPRESS PLUGIN BASED ON THIS CODE BASE DOES NOT ADVERTISE ANY FOR-PROFIT COMPANIES
 
@@ -28,6 +28,9 @@ SUPPORTING DIVERSITY, EQUITY AND INCLUSION IS MANDATORY FOR ALL USERS OF THIS CO
 
 ## FACEBOOK IS NOT A PLACE FOR ANONYMOUS PEOPLE
 
+THE AUTHOR DOES NOT APPROVE OF ADVERTISING FOR-PROFIT FACEBOOK PAGES ANYWHERE NEAR THE CODE DONATED 
+TO FURTHER THE WORK OF ANONYMOUS PEOPLE. 
+
 Meta's CEO is unethical.  He's not just a little bit unethical, he is __despicably__ unethical.  Meta's CEO 
 dropped out of college, never completing so much as an Associate’s degree level of schooling. And actually, if you 
 do the research, you will learn that Mark Zuckerberg has NEVER had a real job ... he has NEVER had employment where 
@@ -45,16 +48,17 @@ Let the 1.4 Trillion dollar lawsuit go to trial by JURY. DO NOT SETTLE OUT OF CO
 The youth of today have never been more hopeless about their future, and deserve justice.  
 
 
-## ABOUT ETHICS
+## MORE ABOUT BUSINESS AND NONPROFIT ETHICS
 
- He has NEVER had to be accountable to ANYONE, so he had no 
-qualms in ruining the lives of your kids and grandkids.  Zuckerberg set up Facebook back in 2012 in the most SELFISH way 
-imaginable -- giving himself 89 percent majority voting power over Facebook's Board of Directors.  
-
-Did you know this?  
+Zuckerberg set up Facebook back in 2012 in the most UNETHICAL and  SELFISH way 
+imaginable -- giving himself 89 percent majority voting power over Facebook's Board of Directors.  Did you know this?  
 
 He made it so he cannot be fired from that job as CEO.  Talk about failure to be accountable for your actions.  Talk 
-about harming people!  Meta's CEO's greed, hatred and mental illness is destroying America. [Sober up and make amends], Mark. 
+about harm to people!  
+
+# THE AUTHOR DOES NOT APPROVE OF ADVERTISING FOR-PROFIT FACEBOOK PAGES ON THE DONATED WORK OF ANONYMOUS PEOPLE. 
+
+Meta's CEO's greed, hatred and mental illness is destroying America. [Sober up and make amends], Mark. 
 Let that lawsuit GO TO TRIAL and accept your part in harming everyone.  Accept that you owe people like me for YOUR theft.  
 Your greed for property and prestige abhorrent.  MARK ZUCKERBERG IS NOT SOBER AND NEVER HAS BEEN. 
 
